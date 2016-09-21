@@ -1,0 +1,1629 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>http服务搭建 | </title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.5.0">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+        <link rel="stylesheet" href="../styles/website.css">
+    
+
+        
+    
+    
+    <link rel="next" href="../第七天/wang_luo_xie_yi.html" />
+    
+    
+    <link rel="prev" href="../第七天/webkai_fa_gai_shu.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book" data-level="8.3" data-chapter-title="http服务搭建" data-filepath="第七天/httpfu_wu_da_jian.md" data-basepath=".." data-revision="Sat Jul 16 2016 18:24:52 GMT+0800 (中国标准时间)">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="单词表/readme.html">
+            
+                
+                    <a href="../单词表/readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        单词表
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="单词表/di_yi_tian.html">
+            
+                
+                    <a href="../单词表/di_yi_tian.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        第一天
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="单词表/di_er_tian.html">
+            
+                
+                    <a href="../单词表/di_er_tian.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        第二天
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="单词表/di_san_tian.html">
+            
+                
+                    <a href="../单词表/di_san_tian.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        第三天
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="单词表/di_si_tian.html">
+            
+                
+                    <a href="../单词表/di_si_tian.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        第四天
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="单词表/di_wu_tian.html">
+            
+                
+                    <a href="../单词表/di_wu_tian.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                        第五天
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="单词表/di_liu_tian.html">
+            
+                
+                    <a href="../单词表/di_liu_tian.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.</b>
+                        
+                        第六天
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="单词表/di_qi_tian.html">
+            
+                
+                    <a href="../单词表/di_qi_tian.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.7.</b>
+                        
+                        第七天
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="单词表/di_ba_tian.html">
+            
+                
+                    <a href="../单词表/di_ba_tian.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.8.</b>
+                        
+                        第八天
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="单词表/第九天单词.html">
+            
+                
+                    <a href="../单词表/第九天单词.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.9.</b>
+                        
+                        第九天
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="第一天/index.html">
+            
+                
+                    <a href="../第一天/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        第一天
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="第一天/doctype标签.html">
+            
+                
+                    <a href="../第一天/doctype标签.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        Doctype标签
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="第一天/html5编码风格.html">
+            
+                
+                    <a href="../第一天/html5编码风格.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        HTML5编码风格
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="第一天/新语义标签.html">
+            
+                
+                    <a href="../第一天/新语义标签.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        新语义标签
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="第一天/h5兼容性.html">
+            
+                
+                    <a href="../第一天/h5兼容性.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        H5兼容性
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="第一天/IE兼容性.html">
+            
+                
+                    <a href="../第一天/IE兼容性.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        IE兼容性测试
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="第一天/新type.html">
+            
+                
+                    <a href="../第一天/新type.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        input标签新type属性
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="第一天/新表单属性.html">
+            
+                
+                    <a href="../第一天/新表单属性.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.</b>
+                        
+                        新表单属性
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="第一天/新表单元素.html">
+            
+                
+                    <a href="../第一天/新表单元素.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.8.</b>
+                        
+                        新表单元素
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="第一天/验证.html">
+            
+                
+                    <a href="../第一天/验证.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.9.</b>
+                        
+                        表单验证
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="第一天/多媒体标签.html">
+            
+                
+                    <a href="../第一天/多媒体标签.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.10.</b>
+                        
+                        多媒体标签
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.11" data-path="第一天/进度条.html">
+            
+                
+                    <a href="../第一天/进度条.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.11.</b>
+                        
+                        两种进度条
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12" data-path="第一天/dom语法.html">
+            
+                
+                    <a href="../第一天/dom语法.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.12.</b>
+                        
+                        Dom语法
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.13" data-path="第一天/bang_zhu_shou_ce.html">
+            
+                
+                    <a href="../第一天/bang_zhu_shou_ce.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.13.</b>
+                        
+                        帮助手册
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.14" data-path="第一天/h5data.html">
+            
+                
+                    <a href="../第一天/h5data.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.14.</b>
+                        
+                        H5data
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="第二天/di_er_tian.html">
+            
+                
+                    <a href="../第二天/di_er_tian.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        第二天
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="第二天/css3jian_jie.html">
+            
+                
+                    <a href="../第二天/css3jian_jie.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        CSS3简介
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="第二天/css3bang_zhu_shou_ce.html">
+            
+                
+                    <a href="../第二天/css3bang_zhu_shou_ce.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        CSS3帮助手册
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="第二天/shu_xing_xuan_ze_qi.html">
+            
+                
+                    <a href="../第二天/shu_xing_xuan_ze_qi.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        属性选择器
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="第二天/xiong_di_xuan_ze_qi.html">
+            
+                
+                    <a href="../第二天/xiong_di_xuan_ze_qi.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        兄弟选择器
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="第二天/wei_lei_xuan_ze_qi.html">
+            
+                
+                    <a href="../第二天/wei_lei_xuan_ze_qi.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.</b>
+                        
+                        伪类选择器
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="第二天/wei_yuan_su_xuan_ze_qi.html">
+            
+                
+                    <a href="../第二天/wei_yuan_su_xuan_ze_qi.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.</b>
+                        
+                        伪元素选择器
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="第二天/bian_kuang_yuan_jiao.html">
+            
+                
+                    <a href="../第二天/bian_kuang_yuan_jiao.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.7.</b>
+                        
+                        边框圆角
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" data-path="第二天/bian_kuang_yin_ying.html">
+            
+                
+                    <a href="../第二天/bian_kuang_yin_ying.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.8.</b>
+                        
+                        边框阴影
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9" data-path="第二天/zi_ti_yin_ying.html">
+            
+                
+                    <a href="../第二天/zi_ti_yin_ying.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.9.</b>
+                        
+                        字体阴影
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.10" data-path="第二天/yan_se.html">
+            
+                
+                    <a href="../第二天/yan_se.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.10.</b>
+                        
+                        颜色
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11" data-path="第二天/he_zi_mo_xing.html">
+            
+                
+                    <a href="../第二天/he_zi_mo_xing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.11.</b>
+                        
+                        盒子模型
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="第三天/di_san_tian.html">
+            
+                
+                    <a href="../第三天/di_san_tian.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        第三天
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="第三天/bei_jing.html">
+            
+                
+                    <a href="../第三天/bei_jing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        背景
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="第三天/guo_du.html">
+            
+                
+                    <a href="../第三天/guo_du.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        渐变
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="第三天/transition.html">
+            
+                
+                    <a href="../第三天/transition.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        transition
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="第三天/2dbian_huan.html">
+            
+                
+                    <a href="../第三天/2dbian_huan.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                        2d变换
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="第三天/bian_kuang_tu_pian.html">
+            
+                
+                    <a href="../第三天/bian_kuang_tu_pian.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                        边框图片
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="第四天/di_si_tian.html">
+            
+                
+                    <a href="../第四天/di_si_tian.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        第四天
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="第四天/3dbian_huan.html">
+            
+                
+                    <a href="../第四天/3dbian_huan.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        3d变换
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="第四天/dong_hua.html">
+            
+                
+                    <a href="../第四天/dong_hua.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        动画
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="第四天/webzi_ti_tu_biao.html">
+            
+                
+                    <a href="../第四天/webzi_ti_tu_biao.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        web字体图标
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="第四天/jian_rong_xing_cha_xun.html">
+            
+                
+                    <a href="../第四天/jian_rong_xing_cha_xun.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        兼容性查询
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="di_wu_tian.html">
+            
+            <span><b>6.</b> 第五天</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="第五天/bodygao_du.html">
+            
+                
+                    <a href="../第五天/bodygao_du.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                        body高度
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="第五天/tou_ming_du.html">
+            
+                
+                    <a href="../第五天/tou_ming_du.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                        透明度
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="第五天/shen_suo_he_zi.html">
+            
+                
+                    <a href="../第五天/shen_suo_he_zi.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.</b>
+                        
+                        伸缩盒子
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="第五天/duo_lie_bu_ju.html">
+            
+                
+                    <a href="../第五天/duo_lie_bu_ju.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.</b>
+                        
+                        多列布局
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="第六天/di_liu_tian.html">
+            
+                
+                    <a href="../第六天/di_liu_tian.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        第六天
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1" data-path="第六天/tuo_ye.html">
+            
+                
+                    <a href="../第六天/tuo_ye.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                        拖拽
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="第六天/quan_ping_mu.html">
+            
+                
+                    <a href="../第六天/quan_ping_mu.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.2.</b>
+                        
+                        全屏幕
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="第六天/wen_jian_du_qu.html">
+            
+                
+                    <a href="../第六天/wen_jian_du_qu.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.3.</b>
+                        
+                        文件读取
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4" data-path="第六天/webcun_chu.html">
+            
+                
+                    <a href="../第六天/webcun_chu.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.4.</b>
+                        
+                        web存储
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.5" data-path="第六天/wang_zhi.html">
+            
+                
+                    <a href="../第六天/wang_zhi.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.5.</b>
+                        
+                        网址
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.6" data-path="第六天/httpfu_wu_da_jian.html">
+            
+                
+                    <a href="../第六天/httpfu_wu_da_jian.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.6.</b>
+                        
+                        HTTP服务搭建
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.7" data-path="第六天/phpji_chu.html">
+            
+                
+                    <a href="../第六天/phpji_chu.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.7.</b>
+                        
+                        PHP基础
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.8" data-path="第六天/phpbiao_dan.html">
+            
+                
+                    <a href="../第六天/phpbiao_dan.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.8.</b>
+                        
+                        PHP表单
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.9" data-path="第六天/markdownyu_fa.html">
+            
+                
+                    <a href="../第六天/markdownyu_fa.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.9.</b>
+                        
+                        markdown语法
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="8" data-path="第七天/di_qi_tian.html">
+            
+                
+                    <a href="../第七天/di_qi_tian.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                        第七天
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.1" data-path="第七天/csbsjia_gou.html">
+            
+                
+                    <a href="../第七天/csbsjia_gou.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.1.</b>
+                        
+                        CS\/BS架构
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2" data-path="第七天/webkai_fa_gai_shu.html">
+            
+                
+                    <a href="../第七天/webkai_fa_gai_shu.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.2.</b>
+                        
+                        web开发概述
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="8.3" data-path="第七天/httpfu_wu_da_jian.html">
+            
+                
+                    <a href="../第七天/httpfu_wu_da_jian.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.3.</b>
+                        
+                        http服务搭建
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.4" data-path="第七天/wang_luo_xie_yi.html">
+            
+                
+                    <a href="../第七天/wang_luo_xie_yi.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.4.</b>
+                        
+                        网络协议
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.5" data-path="第七天/phpji_chu.html">
+            
+                
+                    <a href="../第七天/phpji_chu.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.5.</b>
+                        
+                        PHP基础
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8.6" data-path="第七天/phpbiao_dan.html">
+            
+                
+                    <a href="../第七天/phpbiao_dan.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.6.</b>
+                        
+                        PHP表单
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="9" data-path="第八天/di_ba_tian.html">
+            
+                
+                    <a href="../第八天/di_ba_tian.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                        第八天
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="9.1" data-path="第八天/ajaxgai_nian_ji_ji_ben_shi_yong.html">
+            
+                
+                    <a href="../第八天/ajaxgai_nian_ji_ji_ben_shi_yong.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.1.</b>
+                        
+                        Ajax概念及基本使用
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.2" data-path="第八天/ajaxshu_ju_chuan_shu_xml.html">
+            
+                
+                    <a href="../第八天/ajaxshu_ju_chuan_shu_xml.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.2.</b>
+                        
+                        Ajax数据传输\_XML
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.3" data-path="第八天/ajaxshu_ju_chuan_shu_json.html">
+            
+                
+                    <a href="../第八天/ajaxshu_ju_chuan_shu_json.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.3.</b>
+                        
+                        Ajax数据传输\_JSON
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.4" data-path="第八天/ajaxgong_ju_han_shu_feng_zhuang.html">
+            
+                
+                    <a href="../第八天/ajaxgong_ju_han_shu_feng_zhuang.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.4.</b>
+                        
+                        Ajax工具函数封装
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9.5" data-path="第八天/jqueryzhong_de_ajax_shi_yong.html">
+            
+                
+                    <a href="../第八天/jqueryzhong_de_ajax_shi_yong.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.5.</b>
+                        
+                        JQuery中的Ajax使用
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="10" data-path="第十天/di_shi_tian.html">
+            
+                
+                    <a href="../第十天/di_shi_tian.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.</b>
+                        
+                        第十天
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="10.1" data-path="第十天/mo_ban_cha_jian.html">
+            
+                
+                    <a href="../第十天/mo_ban_cha_jian.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.1.</b>
+                        
+                        模版插件
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10.2" data-path="第十天/jquerycha_jian_xie_fa.html">
+            
+                
+                    <a href="../第十天/jquerycha_jian_xie_fa.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.2.</b>
+                        
+                        jQuery插件写法
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" ></a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="http&#x670D;&#x52A1;&#x642D;&#x5EFA;">HTTP&#x670D;&#x52A1;&#x642D;&#x5EFA;</h1>
+<p>&#x6807;&#x7B7E;&#xFF08;&#x7A7A;&#x683C;&#x5206;&#x9694;&#xFF09;&#xFF1A; &#x7F51;&#x7EDC;&#x5F00;&#x53D1;</p>
+<hr>
+<p><img src="http://static.zybuluo.com/antumuFish/su9afswfn50b3qls3gekafqk/desk.jpg" alt="wampSteps.gif-600.2kB"></p>
+<p>[toc]</p>
+<h2 id="amp">AMP</h2>
+<blockquote>
+<p>AMP:<strong>A:</strong><code>Apache</code>,<strong>M:</strong><code>MySQL</code>,<strong>P:</strong><code>PHP</code></p>
+<ul>
+<li><strong>Apache</strong>
+&#x4E16;&#x754C;&#x6392;&#x540D;&#x7B2C;&#x4E00;&#x7684;&#x670D;&#x52A1;&#x5668;&#x8F6F;&#x4EF6;,&#x7279;&#x70B9;&#x662F;<code>&#x7B80;&#x5355;</code>,<code>&#x901F;&#x5EA6;&#x5FEB;</code>,<code>&#x6027;&#x80FD;&#x7A33;&#x5B9A;</code></li>
+</ul>
+</blockquote>
+<ul>
+<li><p><strong>MySQL</strong>
+&#x5F97;&#x76CA;&#x4E8E;&#x4ED6;&#x4F53;&#x79EF;&#x5C0F;&#x3001;&#x901F;&#x5EA6;&#x5FEB;&#x3001;&#x4F7F;&#x7528;&#x6210;&#x672C;&#x4F4E;&#xFF0C;&#x800C;&#x4E14;&#x662F;&#x5F00;&#x6E90;&#x54E6;&#xFF0C;&#x6240;&#x4EE5;&#x5F88;&#x591A;&#x7F51;&#x7AD9;&#x90FD;&#x9009;&#x7528;<strong>MySql</strong>&#x4F5C;&#x4E3A;&#x4ED6;&#x4EEC;&#x7684;&#x6570;&#x636E;&#x5E93;.</p>
+</li>
+<li><p><strong>PHP</strong>
+&#x5C55;&#x5F00;&#x540E;PHP: Hypertext Preprocessor&#xFF0C;&#x4E2D;&#x6587;&#x540D;&#xFF1A;<code>&#x8D85;&#x6587;&#x672C;&#x9884;&#x5904;&#x7406;&#x5668;</code>,&#x76F4;&#x63A5;&#x5C06;&#x4EE3;&#x7801;&#x5D4C;&#x5165;<code>HTML</code> &#x6587;&#x6863;&#x4E2D;&#x6267;&#x884C;,&#x7B80;&#x5355;&#x6613;&#x5B66;,&#x5BB9;&#x6613;&#x4E0A;&#x624B;.</p>
+</li>
+</ul>
+<h2 id="amp&#x96C6;&#x6210;&#x73AF;&#x5883;">AMP&#x96C6;&#x6210;&#x73AF;&#x5883;</h2>
+<blockquote>
+<p>&#x521A;&#x521A;&#x5DF2;&#x7ECF;&#x89E3;&#x91CA;&#x4E86;&#x8FD9;&#x51E0;&#x4E2A;&#x5355;&#x8BCD;&#x7684;&#x610F;&#x601D;,&#x5176;&#x4E2D;<code>AMP</code>&#x662F;&#x4E09;&#x4E2A;&#x72EC;&#x7ACB;&#x7684;&#x8F6F;&#x4EF6;,&#x4F46;&#x662F;&#x5BF9;&#x4E8E;&#x521D;&#x5B66;&#x8005;&#x800C;&#x8A00;&#x5206;&#x522B;&#x5B89;&#x88C5;&#x4EE5;&#x53CA;&#x914D;&#x7F6E;&#x9700;&#x8981;&#x638C;&#x63E1;&#x4E00;&#x5B9A;&#x7684;&#x8F6F;&#x4EF6;&#x77E5;&#x8BC6;,&#x6240;&#x4EE5;&#x5C31;&#x6709;&#x4E86;&#x5F88;&#x591A;<code>AMP</code>&#x96C6;&#x6210;&#x73AF;&#x5883;&#x5E2E;&#x52A9;&#x6211;&#x4EEC;&#x7B80;&#x5316;&#x5B89;&#x88C5;</p>
+</blockquote>
+<ul>
+<li><p><strong>WAMP:</strong>
+&#x5728;<code>windows</code>&#x5E73;&#x53F0;&#x4E0B;&#x5982;&#x679C;&#x60F3;&#x8981;&#x4E00;&#x6B65;&#x5230;&#x4F4D;&#x5B89;&#x88C5;&#x597D;&#x8FD9;&#x4E9B;&#x8F6F;&#x4EF6;,&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>wamp</code>,&#x5176;&#x4E2D;w&#x7684;&#x610F;&#x601D;&#x4E3A;<code>windows</code>&#x6307;&#x7684;&#x662F;windows&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;
+&#x8F6F;&#x4EF6;&#x7684;&#x5B98;&#x7F51;&#x4E3A;:<a href="http://www.wampserver.com/en/" target="_blank">wamp&#x5B98;&#x65B9;&#x7F51;&#x7AD9;</a></p>
+</li>
+<li><p><strong>XAMPP:</strong>
+&#x4E0D;&#x540C;&#x4E8E;<code>wamp</code>&#x9488;&#x5BF9;&#x4E8E;<code>windows</code>,<code>XAMPP</code>&#x53EF;&#x4EE5;&#x5B89;&#x88C5;&#x5728;<code>Linux</code>,<code>Windows</code>,<code>MAC OS X</code>,<code>Solaris</code>&#x8FD9;&#x4E9B;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x4E0A;&#x9762;</p>
+</li>
+</ul>
+<h2 id="wamp&#x5B89;&#x88C5;&#x914D;&#x7F6E;&#x6CE8;&#x610F;&#x70B9;">WAMP&#x5B89;&#x88C5;,&#x914D;&#x7F6E;,&#x6CE8;&#x610F;&#x70B9;</h2>
+<blockquote>
+<p>&#x8FD9;&#x91CC;&#x9009;&#x7528;<code>wamp</code>&#x4F5C;&#x4E3A;&#x5B66;&#x4E60;&#x73AF;&#x5883;,&#x63A5;&#x4E0B;&#x6765;&#x6F14;&#x793A;&#x5982;&#x4F55;&#x5B89;&#x88C5;&#x5E76;&#x8BBE;&#x7F6E;wamp</p>
+</blockquote>
+<h3 id="wamp&#x5B89;&#x88C5;">WAMP&#x5B89;&#x88C5;</h3>
+<p><img src="http://static.zybuluo.com/antumuFish/ahc7r09bv82114dm0yf2qegy/wampSteps.gif" alt="wampSteps.gif-600.2kB"></p>
+<ol>
+<li>&#x53CC;&#x51FB;&#x63D0;&#x4F9B;&#x7684;&#x5B89;&#x88C5;&#x5305;</li>
+<li>&#x70B9;&#x51FB;<code>Next</code></li>
+<li>&#x9009;&#x62E9;&#x5B89;&#x88C5;&#x8DEF;&#x5F84;,&#x6CE8;&#x610F;:<strong>&#x4E0D;&#x8981;&#x4F7F;&#x7528;&#x4E2D;&#x6587;&#x8DEF;&#x5F84;</strong>.&#x5EFA;&#x8BAE;&#x4F7F;&#x7528;&#x8DDF;&#x56FE;&#x7247;&#x4E00;&#x81F4;&#x7684;&#x8DEF;&#x5F84;</li>
+<li>&#x5982;&#x679C;&#x62C5;&#x5FC3;&#x5B89;&#x88C5;&#x5B8C;&#x6210;&#x540E;&#x627E;&#x4E0D;&#x5230;<code>wamp</code>&#x53EF;&#x4EE5;&#x5C06;&#x4E24;&#x4E2A;&#x65B9;&#x6846;&#x5168;&#x90E8;&#x52FE;&#x9009;,&#x70B9;&#x51FB;<code>next</code>&#x7EE7;&#x7EED;&#x5B89;&#x88C5;</li>
+<li>&#x70B9;&#x51FB;<code>install</code>&#x5F00;&#x59CB;&#x5B89;&#x88C5;</li>
+<li>&#x5B89;&#x88C5;&#x5B8C;&#x6BD5;&#x4EE5;&#x540E;&#x70B9;&#x51FB;<code>finish</code>&#x5373;&#x53EF;&#x542F;&#x52A8;<code>wamp</code></li>
+<li>&#x542F;&#x52A8;&#x5B8C;&#x6210;&#x80FD;&#x591F;&#x5728;&#x4EFB;&#x52A1;&#x680F;&#x7684;&#x53F3;&#x4E0B;&#x89D2;&#x770B;&#x5230;&#x8FD9;&#x4E2A;&#x56FE;&#x6807;&#x5373;&#x8868;&#x793A;&#x5B89;&#x88C5;&#x6210;&#x529F;<img src="http://static.zybuluo.com/antumuFish/y2vhy4kaazhtwdbmek359ldm/image_1alref1o416psincp5dqr1e9c4c.png" alt="image_1alref1o416psincp5dqr1e9c4c.png-1.5kB"></li>
+</ol>
+<h3 id="&#x6D4B;&#x8BD5;&#x8BBF;&#x95EE;">&#x6D4B;&#x8BD5;&#x8BBF;&#x95EE;</h3>
+<blockquote>
+<p>&#x6253;&#x5F00;&#x6D4F;&#x89C8;&#x5668;&#x8F93;&#x5165;<code>127.0.0.1</code>&#x67E5;&#x770B;&#x663E;&#x793A;&#x7684;&#x5185;&#x5BB9;,&#x5982;&#x679C;&#x662F;&#x7B2C;&#x4E00;&#x6B21;&#x5B89;&#x88C5;,&#x9ED8;&#x8BA4;&#x663E;&#x793A;&#x7684;&#x5E94;&#x8BE5;&#x662F;&#x5982;&#x4E0B;&#x56FE;&#x7247;</p>
+</blockquote>
+<ul>
+<li><strong>127.0.0.1&#x542B;&#x4E49;:</strong>
+<code>127.0.0.1</code>&#x662F;&#x56DE;&#x9001;&#x5730;&#x5740;&#xFF0C;&#x6307;&#x672C;&#x5730;&#x673A;&#xFF0C;&#x4E00;&#x822C;&#x7528;&#x6765;&#x6D4B;&#x8BD5;&#x4F7F;&#x7528;,&#x5982;&#x679C;&#x60F3;&#x8981;&#x8BA9;&#x5176;&#x4ED6;&#x7535;&#x8111;&#x4E5F;&#x80FD;&#x591F;&#x8BBF;&#x95EE;,&#x9700;&#x8981;&#x8FDB;&#x884C;&#x4E00;&#x4E9B;&#x914D;&#x7F6E;,&#x8BE6;&#x89C1;&#x4E0B;&#x6587;.</li>
+</ul>
+<p><img src="http://static.zybuluo.com/antumuFish/ll4988qkaignddg2okjhutjx/wamp08.png" alt="wamp08.png-174.3kB"></p>
+<h3 id="wamp&#x56FE;&#x6807;&#x6A59;&#x8272;&#x89E3;&#x51B3;&#x65B9;&#x6848;">WAMP&#x56FE;&#x6807;&#x6A59;&#x8272;&#x89E3;&#x51B3;&#x65B9;&#x6848;</h3>
+<blockquote>
+<p>&#x5982;&#x679C;&#x6CA1;&#x6709;&#x4F7F;&#x7528;&#x8FC7;&#x81EA;&#x5DF1;&#x7684;&#x7535;&#x8111;&#x914D;&#x7F6E;&#x670D;&#x52A1;&#x5668;&#x90A3;&#x4E48;<code>WAMP</code>&#x9ED8;&#x8BA4;&#x5E94;&#x8BE5;&#x4E3A;&#x7EFF;&#x8272;&#x7684;&#x56FE;&#x6807;,&#x90A3;&#x4E48;&#x5982;&#x679C;WAMP&#x542F;&#x52A8;,&#x663E;&#x793A;&#x7684;&#x662F;&#x6A59;&#x8272;&#x56FE;&#x6807;&#x600E;&#x4E48;&#x529E;&#x5462;?<img src="http://static.zybuluo.com/antumuFish/gwx0rgj5je8094xd2zc4lgmj/wamp07.png" alt="wamp07.png-1.2kB"></p>
+</blockquote>
+<ol>
+<li><p>&#x68C0;&#x67E5;&#x662F;&#x5426;&#x5F00;&#x542F;&#x4E86;&#x670D;&#x52A1;:&#x4FDD;&#x8BC1;<code>Apache</code>,<code>MySQL</code>&#x7684;&#x670D;&#x52A1;&#x90FD;&#x662F;&#x542F;&#x52A8;&#x72B6;&#x6001;&#x5373;&#x53EF;
+<img src="http://static.zybuluo.com/antumuFish/gvs0tmp0i0563jq7otypeigj/wamptest.gif" alt="wamptest.gif-708.2kB"></p>
+</li>
+<li><p>&#x68C0;&#x67E5;&#x662F;&#x5426;&#x5F00;&#x542F;&#x4E86;&#x5FAE;&#x8F6F;&#x81EA;&#x5E26;&#x7684;<code>IIS&#x670D;&#x52A1;</code>:&#x9996;&#x5148;&#x6253;&#x5F00;&#x63A7;&#x5236;&#x9762;&#x677F;,&#x4FDD;&#x8BC1;&#x52A8;&#x6001;&#x56FE;&#x6700;&#x540E;&#x9009;&#x4E2D;&#x7684;<code>Internet Information Services</code>&#x6CA1;&#x6709;&#x88AB;&#x52FE;&#x9009;&#x5373;&#x53EF;
+<img src="http://static.zybuluo.com/antumuFish/yjkqhvbqyanx3b52881kn7lg/closeIIS.gif" alt="closeIIS.gif-663.6kB"></p>
+</li>
+</ol>
+<h3 id="&#x914D;&#x7F6E;&#x5C40;&#x57DF;&#x7F51;&#x8BBF;&#x95EE;">&#x914D;&#x7F6E;&#x5C40;&#x57DF;&#x7F51;&#x8BBF;&#x95EE;</h3>
+<blockquote>
+<p>&#x5B89;&#x88C5;&#x597D;&#x4E86;<code>WAMP</code>&#x4E4B;&#x540E;&#x5C31;&#x80FD;&#x591F;&#x901A;&#x8FC7;&#x81EA;&#x5DF1;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x8F93;&#x5165;<code>127.0.0.1</code>,&#x5982;&#x679C;&#x60F3;&#x8981;&#x8BA9;&#x540C;&#x4E00;&#x5C40;&#x57DF;&#x7F51;&#x4E2D;&#x7684;&#x5176;&#x4ED6;&#x7535;&#x8111;&#x4E5F;&#x80FD;&#x591F;&#x8BBF;&#x95EE;,&#x9700;&#x8981;&#x8FDB;&#x884C;&#x5982;&#x4E0B;&#x914D;&#x7F6E;</p>
+</blockquote>
+<ul>
+<li><strong>&#x5173;&#x95ED;&#x9632;&#x706B;&#x5899;:</strong>&#x9996;&#x5148;&#x6253;&#x5F00;<code>&#x63A7;&#x5236;&#x9762;&#x677F;</code></li>
+</ul>
+<p><img src="http://static.zybuluo.com/antumuFish/i1xss4v50jel8v3w0ta8wvz4/closeDef.gif" alt="closeDef.gif-579.1kB"></p>
+<ul>
+<li><strong>&#x4FEE;&#x6539;<code>httpd.conf&#x6587;&#x4EF6;</code></strong>
+&#x56E0;&#x4E3A;<code>Apache</code>&#x7684;&#x914D;&#x7F6E;&#x9ED8;&#x8BA4;&#x4E0D;&#x5141;&#x8BB8;&#x5916;&#x90E8;&#x8BBF;&#x95EE;,&#x6211;&#x4EEC;&#x9700;&#x8981;&#x4FEE;&#x6539;&#x914D;&#x7F6E;
+&#x627E;&#x5230;<code>D:\wamp\bin\apache\Apache2.2.21\conf</code>&#x6587;&#x4EF6;
+&#x4F7F;&#x7528;&#x6587;&#x672C;&#x7F16;&#x8F91;&#x5DE5;&#x5177;&#x6253;&#x5F00;,&#x901A;&#x8FC7;&#x641C;&#x7D22;&#x529F;&#x80FD;&#x627E;&#x5230;<code>onlineoffline tag - don&apos;t remove</code>&#x8FD9;&#x53E5;&#x8BDD;</li>
+</ul>
+<pre><code>&#x5C06;&#x5728;234&#x884C;&#x9644;&#x8FD1;&#x7684; 
+Allow from 127.0.0.1
+&#x66FF;&#x6362;&#x4E3A;
+Allow from all
+</code></pre><p>&#x4FDD;&#x5B58;,&#x7136;&#x540E;&#x91CD;&#x542F;<code>wamp</code>&#x7684;&#x6240;&#x6709;&#x670D;&#x52A1;&#x5373;&#x53EF;</p>
+<ul>
+<li><p><strong>&#x83B7;&#x53D6;&#x672C;&#x673A;IP&#x5730;&#x5740;:</strong></p>
+<ul>
+<li><strong>&#x65B9;&#x6CD5;1:</strong> <ul>
+<li>&#x6253;&#x5F00;<code>&#x63A7;&#x5236;&#x9762;&#x677F;-&gt;&#x7F51;&#x7EDC;&#x548C;Internet-&gt;&#x7F51;&#x7EDC;&#x548C;&#x5171;&#x4EAB;&#x4E2D;&#x5FC3;-&gt;&#x66F4;&#x6539;&#x9002;&#x914D;&#x5668;&#x8BBE;&#x7F6E;</code></li>
+<li>&#x627E;&#x5230;&#x6B63;&#x5728;&#x8FDE;&#x63A5;&#x7684;&#x7F51;&#x7EDC;,<code>&#x53CC;&#x51FB;</code>
+<img src="http://static.zybuluo.com/antumuFish/c1z38r6wb2hsm6j1ernga3fl/getIp01.gif" alt="getIp01.gif-877.2kB"></li>
+</ul>
+</li>
+<li><strong>&#x65B9;&#x6CD5;2:</strong><ul>
+<li>&#x6253;&#x5F00;&#x547D;&#x4EE4;&#x884C;&#x5DE5;&#x5177;</li>
+<li>&#x8F93;&#x5165;<code>ipconfig</code>
+<img src="http://static.zybuluo.com/antumuFish/k9b8jdj3e7n2idyeamgu8z8g/getIp02.gif" alt="getIp02.gif-544.3kB"></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>&#x5C40;&#x57DF;&#x7F51;&#x5185;&#x8BBF;&#x95EE;:</strong>
+&#x4F7F;&#x7528;&#x4E00;&#x53F0;&#x76F8;&#x540C;&#x5C40;&#x57DF;&#x7F51;&#x5185;&#x7684;<code>&#x62E5;&#x6709;&#x6D4F;&#x89C8;&#x5668;</code>&#x7684;&#x8BBE;&#x5907;&#x5373;&#x53EF;&#x901A;&#x8FC7;&#x521A;&#x521A;&#x83B7;&#x53D6;&#x7684;<code>IP&#x5730;&#x5740;&#x8FDB;&#x884C;&#x8BBF;&#x95EE;</code></p>
+</li>
+<li><p><strong>&#x5E38;&#x89C1;&#x7684;&#x901A;&#x5C40;&#x57DF;&#x7F51;&#x8BA1;&#x7B97;&#x673A;:</strong></p>
+<blockquote>
+<p>&#x5C40;&#x57DF;&#x7F51;&#x7684;&#x6982;&#x5FF5;&#x8FD9;&#x91CC;&#x4E0D;&#x505A;&#x62D3;&#x5C55;,&#x4E3A;&#x4E86;&#x65B9;&#x4FBF;&#x6D4B;&#x8BD5;&#x5F53;&#x6EE1;&#x8DB3;&#x4E0B;&#x5217;&#x60C5;&#x51B5;&#x53EF;&#x4EE5;&#x5C1D;&#x8BD5;&#x8BBF;&#x95EE;</p>
+</blockquote>
+<ul>
+<li>&#x8FDE;&#x63A5;&#x540C;&#x4E00;&#x4E2A;<code>wifi</code>&#x7684;&#x8BA1;&#x7B97;&#x673A;(&#x624B;&#x673A;&#x4E5F;&#x53EF;&#x4EE5;&#x6D4B;&#x8BD5;)</li>
+<li>&#x8FDE;&#x63A5;&#x540C;&#x4E00;&#x4E2A;<code>&#x4EA4;&#x6362;&#x673A;</code>&#x7684;&#x8BA1;&#x7B97;&#x673A;<ul>
+<li>&#x540C;&#x6559;&#x5BA4;&#x7684;&#x7535;&#x8111;</li>
+<li>&#x540C;&#x516C;&#x53F8;&#x7684;&#x7535;&#x8111;</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="&#x914D;&#x7F6E;&#x7F51;&#x7AD9;&#x6839;&#x76EE;&#x5F55;">&#x914D;&#x7F6E;&#x7F51;&#x7AD9;&#x6839;&#x76EE;&#x5F55;</h3>
+<blockquote>
+<p>(<strong>&#x6CE8;:</strong> <em>&#x8FD9;&#x91CC;&#x4F7F;&#x7528;&#x7684;&#x8DEF;&#x5F84;&#x4E3A;&#x4E0A;&#x8FF0;&#x5B89;&#x88C5;&#x65F6;&#x7684;&#x8DEF;&#x5F84;,&#x5982;&#x679C;&#x6CA1;&#x6709;&#x5B89;&#x88C5;&#x5728;D&#x76D8;,&#x90A3;&#x4E48;&#x9700;&#x8981;&#x627E;&#x5230;&#x5BF9;&#x5E94;&#x7684;&#x8DEF;&#x5F84;</em>)</p>
+</blockquote>
+<ul>
+<li><p><strong>&#x627E;&#x5230;<code>WAMP</code>&#x7684;&#x5B89;&#x88C5;&#x76EE;&#x5F55;:</strong><code>D:\wamp</code></p>
+</li>
+<li><p><strong>&#x627E;&#x5230;<code>Apache</code>&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;</strong>
+<code>D:\wamp\bin\apache\Apache2.2.21\conf</code></p>
+</li>
+<li><p><strong>&#x4FEE;&#x6539;<code>http.conf</code>&#x6587;&#x4EF6;</strong>
+&#x4F7F;&#x7528;&#x6587;&#x672C;&#x7F16;&#x8F91;&#x5DE5;&#x5177;&#x6253;&#x5F00;<code>httpd.conf</code>&#x6587;&#x4EF6;,&#x641C;&#x7D22;<code>documentRoot</code>
+&#x5982;&#x679C;&#x662F;&#x521D;&#x6B21;&#x5B89;&#x88C5;,&#x5E94;&#x8BE5;&#x5206;&#x522B;&#x5728;<code>178</code>&#x884C;,<code>205</code>&#x884C;
+&#x4FEE;&#x6539;&#x5B8C;&#x6BD5;&#x4EE5;&#x540E;&#x8BB0;&#x5F97;&#x4FDD;&#x5B58;<code>ctrl+s</code></p>
+</li>
+</ul>
+<p><img src="http://static.zybuluo.com/antumuFish/fybojfaavamtu3rapwu0dvqr/documentRoot.gif" alt="documentRoot.gif-2245.2kB"></p>
+<ul>
+<li><p><strong>&#x91CD;&#x542F;<code>WAMP</code>&#x670D;&#x52A1;</strong>
+&#x5DE6;&#x952E;&#x70B9;&#x51FB;<code>wamp</code>&#x56FE;&#x6807;,&#x9009;&#x62E9;<code>&#x91CD;&#x65B0;&#x542F;&#x52A8;&#x6240;&#x6709;&#x670D;&#x52A1;</code>
+<img src="http://static.zybuluo.com/antumuFish/pcfudtnuh7s0pt226f96kal5/restWamp.gif" alt="restWamp.gif-166kB"></p>
+</li>
+<li><p><strong>&#x5EFA;&#x7ACB;&#x6587;&#x4EF6;&#x5939;,&#x5C1D;&#x8BD5;&#x8BBF;&#x95EE;</strong>
+&#x4E3A;&#x4E86;&#x4FDD;&#x8BC1;&#x8BBF;&#x95EE;&#x65F6;&#x786E;&#x5B9E;&#x6709;&#x5185;&#x5BB9;,&#x5728;<code>E:</code>&#x76D8;&#x4E0B;&#x5EFA;&#x7ACB;<code>www</code>&#x6587;&#x4EF6;&#x5939;,&#x5E76;&#x4E14;&#x5728;&#x6539;&#x6587;&#x4EF6;&#x5939;&#x4E0B;&#x653E;&#x5165;&#x6587;&#x4EF6;,&#x518D;&#x6B21;&#x5C1D;&#x8BD5;&#x901A;&#x8FC7;<code>127.0.0.1</code>&#x8FDB;&#x884C;&#x8BBF;&#x95EE;
+<img src="http://static.zybuluo.com/antumuFish/eko70jme9shij0zs2418gmiq/visitWWW.gif" alt="visitWWW.gif-760.4kB"></p>
+</li>
+</ul>
+<h3 id="&#x914D;&#x7F6E;&#x865A;&#x62DF;&#x4E3B;&#x673A;">*&#x914D;&#x7F6E;&#x865A;&#x62DF;&#x4E3B;&#x673A;</h3>
+<blockquote>
+<p>&#x5B89;&#x88C5;&#x5B8C;&#x4E86;<code>wamp</code>&#x6211;&#x4EEC;&#x7684;&#x7535;&#x8111;&#x5DF2;&#x7ECF;&#x53EF;&#x4EE5;&#x7B97;&#x662F;&#x4E00;&#x53F0;<code>Web&#x670D;&#x52A1;&#x5668;</code>&#x4E86;&#xFF0C;&#x4F46;&#x662F;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x7F51;&#x7AD9;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;,&#x901A;&#x8FC7;&#x914D;&#x7F6E;&#x865A;&#x62DF;&#x4E3B;&#x673A;&#x5206;&#x522B;&#x8BBE;&#x5B9A;&#x6839;&#x76EE;&#x5F55;&#xFF0C;&#x80FD;&#x591F;&#x5B9E;&#x73B0;&#x5BF9;&#x591A;&#x4E2A;&#x7F51;&#x7AD9;&#x7684;&#x7BA1;&#x7406;&#x3002;</p>
+</blockquote>
+<ul>
+<li><strong>&#x5F00;&#x542F;&#x865A;&#x62DF;&#x4E3B;&#x673A;&#x8F85;&#x914D;&#x7F6E;:</strong><ul>
+<li>&#x6253;&#x5F00;<code>D:\wamp\bin\apache\Apache2.2.21\conf</code></li>
+<li>&#x627E;&#x5230;<code>httpd.conf</code>&#x6587;&#x4EF6;,&#x5E76;&#x7528;&#x6587;&#x672C;&#x7F16;&#x8F91;&#x5DE5;&#x5177;&#x6253;&#x5F00;&#x5B83;</li>
+<li>&#x901A;&#x8FC7;&#x641C;&#x7D22;&#x627E;&#x5230;<code>Include conf/extra/httpd-vhosts.conf</code></li>
+<li>&#x5C06;&#x6587;&#x672C;&#x6700;&#x524D;&#x65B9;&#x7684;<code>#</code>&#x5220;&#x9664;&#x5373;&#x53EF;</li>
+<li>&#x4FEE;&#x6539;&#x5B8C;&#x6BD5;<code>&#x4FDD;&#x5B58;</code></li>
+</ul>
+</li>
+</ul>
+<p><img src="http://static.zybuluo.com/antumuFish/0q5pjakp1rkdwuvpyc949yku/openVirtual.gif" alt="openVirtual.gif-1532.8kB"></p>
+<ul>
+<li><strong>&#x914D;&#x7F6E;&#x865A;&#x62DF;&#x4E3B;&#x673A;:</strong><ul>
+<li>&#x6253;&#x5F00;<code>D:\wamp\bin\apache\Apache2.2.21\conf\extra</code></li>
+<li>&#x627E;&#x5230;<code>httpd-vhosts.conf</code>&#x6587;&#x4EF6;,&#x4F7F;&#x7528;&#x6587;&#x672C;&#x7F16;&#x8F91;&#x5DE5;&#x5177;&#x6253;&#x5F00;</li>
+<li>&#x62F7;&#x8D1D;&#x4E00;&#x4EFD;<code>VirtualHost</code>&#x6807;&#x7B7E;&#x4E2D;&#x7684;&#x5185;&#x5BB9;,&#x5E76;&#x4FEE;&#x6539;<ul>
+<li>DocumentRoot:&quot;e:/www/example&quot;</li>
+<li>ServerName example.com</li>
+<li>ServerAlias &quot;www.example.com&quot;</li>
+</ul>
+</li>
+<li>&#x4FEE;&#x6539;&#x5B8C;&#x6BD5;<code>&#x4FDD;&#x5B58;</code>  </li>
+</ul>
+</li>
+</ul>
+<pre><code>&lt;VirtualHost *:80&gt;
+    ServerAdmin webmaster@dummy-host2.example.com
+    DocumentRoot &quot;e:/www/example&quot;
+    ServerName example.com
+    ServerAlias &quot;www.example.com&quot;
+    ErrorLog &quot;logs/dummy-host2.example.com-error.log&quot;
+    CustomLog &quot;logs/dummy-host2.example.com-access.log&quot; common
+&lt;/VirtualHost&gt;
+</code></pre><p><img src="http://static.zybuluo.com/antumuFish/wzezritokh11wzdqcat5slc9/addVirtutal.gif" alt="addVirtutal.gif-2396.2kB"></p>
+<ul>
+<li><strong>&#x4FEE;&#x6539;<code>DNS&#xFF08;hosts&#xFF09;</code>&#x6587;&#x4EF6;</strong><ul>
+<li>&#x6253;&#x5F00;<code>C:\Windows\System32\drivers\etc</code>&#x76EE;&#x5F55;</li>
+<li>&#x627E;&#x5230; <code>host</code>&#x6587;&#x4EF6;,&#x5C06;&#x5176;&#x62F7;&#x8D1D;&#x5230;&#x5DE6;&#x9762;</li>
+<li>&#x684C;&#x9762;&#x7684;<code>host</code>&#x6587;&#x4EF6;,&#x4F7F;&#x7528;&#x6587;&#x672C;&#x5DE5;&#x5177;&#x6253;&#x5F00;</li>
+<li>&#x5728;&#x672B;&#x5C3E;&#x6DFB;&#x52A0;&#x5982;&#x4E0B;&#x5185;&#x5BB9;</li>
+<li>&#x4FEE;&#x6539;&#x5B8C;&#x6BD5;<code>&#x4FDD;&#x5B58;</code></li>
+<li>&#x5C06;&#x6587;&#x4EF6;&#x62F7;&#x8D1D;&#x56DE;<code>C:\Windows\System32\drivers\etc</code>&#x76EE;&#x5F55;</li>
+<li><code>&#x66FF;&#x6362;</code>&#x76EE;&#x6807;&#x6587;&#x4EF6;,&#x5982;&#x679C;&#x5F39;&#x51FA;&#x6743;&#x9650;&#x5BF9;&#x8BDD;&#x6846;,&#x9009;&#x62E9;<code>&#x7EE7;&#x7EED;</code>
+<img src="http://static.zybuluo.com/antumuFish/9ns31yo44hukjsqr0awwc64i/image_1alrlnmp3dt01p4f199c11hn1oojae.png" alt="image_1alrlnmp3dt01p4f199c11hn1oojae.png-30.9kB">
+<img src="http://static.zybuluo.com/antumuFish/49ubidlfxwkzw2fu36po4zct/image_1alrloiso1ht6tipppbdo9e20ar.png" alt="image_1alrloiso1ht6tipppbdo9e20ar.png-26kB"></li>
+</ul>
+</li>
+</ul>
+<pre><code>127.0.0.1        example.com
+127.0.0.1        www.example.com
+</code></pre><ul>
+<li><strong>&#x91CD;&#x542F;<code>WAMP</code>&#x5C1D;&#x8BD5;&#x8BBF;&#x95EE;</strong><ul>
+<li>&#x91CD;&#x542F;<code>wamp</code></li>
+<li>&#x6253;&#x5F00;&#x6D4F;&#x89C8;&#x5668;&#x8F93;&#x5165;<code>www.example.com</code>&#x5373;&#x53EF;&#x8BBF;&#x95EE;</li>
+<li>&#x5982;&#x679C;&#x5F39;&#x51FA;&#x7684;&#x662F;&#x4E0B;&#x56FE;</li>
+</ul>
+</li>
+</ul>
+<p><img src="http://static.zybuluo.com/antumuFish/ic30o2x9ofmqwbzyn8oixz0m/image_1alrlrfp91acmn1u1hac1a0716dnb8.png" alt="image_1alrlrfp91acmn1u1hac1a0716dnb8.png-63.5kB"></p>
+<ul>
+<li><p>&#x4FEE;&#x6539;<code>httpd-vhosts.conf&#x6587;&#x4EF6;</code></p>
+<ul>
+<li>&#x6253;&#x5F00;<code>D:\wamp\bin\apache\Apache2.2.21\conf\extra</code>&#x6587;&#x4EF6;&#x5939;</li>
+<li>&#x4F7F;&#x7528;&#x6587;&#x672C;&#x7F16;&#x8F91;&#x5DE5;&#x5177;&#x6253;&#x5F00;<code>httpd-vhosts.conf</code>&#x6587;&#x4EF6;</li>
+<li><p>&#x5728;&#x4E4B;&#x524D;&#x914D;&#x7F6E;&#x7684;<code>VirtualHost</code>&#x6807;&#x7B7E;&#x4E2D;,&#x52A0;&#x5165;&#x5982;&#x4E0B;&#x5185;&#x5BB9;</p>
+<pre><code>&lt;Directory &quot;e:/www/example&quot;&gt;              
+  Options Indexes FollowSymLinks
+  AllowOverride All
+  Order allow,deny
+  Allow from all
+&lt;/Directory&gt;
+</code></pre><p><img src="http://static.zybuluo.com/antumuFish/6dackvzj1y808tpjz0bpk0hh/image_1alrm1h9q1i341kt21e9a135i16eqbl.png" alt="image_1alrm1h9q1i341kt21e9a135i16eqbl.png-66.5kB"> </p>
+</li>
+<li>&#x91CD;&#x542F;<code>wamp</code>,&#x5373;&#x53EF;&#x8BBF;&#x95EE;</li>
+</ul>
+</li>
+</ul>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../第七天/webkai_fa_gai_shu.html" class="navigation navigation-prev " aria-label="Previous page: web开发概述"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../第七天/wang_luo_xie_yi.html" class="navigation navigation-next " aria-label="Next page: 网络协议"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
